@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown a {
+    color: #0000EE;
+}
+
+.markdown a:visited {
+    color: #551A8B;
+}
+
+.markdown pre code {
+    overflow-x: scroll;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.scrollable {
+    overflow-y: auto;
+}
+
+.tokyo-night {
+    background-color: #1a1b26;
+    color: #c0caf5;
+    padding: 1em;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.width-page {
+    width: 70%;
+}
+
+@media (max-width: 768px) {
+    .width-page {
+        width: 100%;
+    }
+}
+
+div>pre>code {
+    color: white;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+    background: #edf2f7;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 10px;
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+    background-color: #2d3748;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.tocul {
+    padding-left: 0;
+}
+
+.tocli {
+    list-style: none;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-size: 2em;
+    border-left: 3px solid rgb(89, 165, 201);
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bdn {
+    border-left: none !important;
+}
+
+
+.markdown h1>a,
+.markdown h2>a,
+.markdown h3>a,
+.markdown h4>a,
+.markdown h5>a,
+.markdown h6>a,
+.markdown h1>a:visited,
+.markdown h2>a:visited,
+.markdown h3>a:visited,
+.markdown h4>a:visited,
+.markdown h5>a:visited,
+.markdown h6>a:visited {
+    color: black;
+}
+
+.markdown ul {
+    list-style: disc;
+    padding-left: 20px;
+    list-style-position: outside;
+}
+
+.markdown ol {
+    list-style: decimal;
+    padding-left: 20px;
+    list-style-position: outside;
+}
+
+.markdown li {
+    margin-bottom: 10px;
+}
+
+.markdown blockquote {
+    font-weight: 500;
+    font-style: italic;
+    color: #4a5568;
+    border-left: 0.25rem solid #cbd5e0;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.markdown blockquote p::before {
+    content: open-quote;
+}
+
+.markdown blockquote p::after {
+    content: close-quote;
+}
+
+.markdown p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.markdown .pswp-gallery {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.markdown figure figcaption {
+    text-align: center;
+    font-size: small;
+    color: #696969;
+}
