@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   css: [
     '~/assets/css/style.css'
   ],
+  build: { 
+    transpile: ["shiki"],
+  },
   plugins: [
     "~/plugins/mfm.js",
     "~/plugins/daysjs.js",
@@ -16,8 +19,8 @@ export default defineNuxtConfig({
   routeRules: {
     '/admin/**': { ssr: false },
     '/': { ssr: true, prerender: true },
-    '/tags/**': { swr: 300 },
-    '/blog/**': { swr: 300 },
+    '/tags/**': { isr: 300 },
+    '/blog/**': { isr: 300 },
   },
 
   compatibilityDate: '2024-09-24',
