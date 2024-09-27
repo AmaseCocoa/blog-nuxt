@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   ssr: true,
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-lucide-icons', '@nuxt/image', '@nuxtjs/seo'],
+  modules: ['@nuxt/content', '@nuxtjs/tailwindcss', 'nuxt-lucide-icons', '@nuxt/image', '@nuxtjs/seo', '@nuxthq/studio'],
   css: [
     '~/assets/css/style.css'
   ],

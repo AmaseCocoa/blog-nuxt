@@ -10,6 +10,7 @@
   "dependencies": {
     "@nuxt/content": "^2.13.2",
     "@nuxt/image": "^1.8.0",
+    "@nuxthq/studio": "^2.1.1",
     "@nuxtjs/seo": "2.0.0-rc.21",
     "@tabler/icons-vue": "^3.17.0",
     "blurhash": "^2.0.5",
