@@ -1,6 +1,6 @@
 <template>
     <div class="container rounded-lg code-container" @mouseover="onHover(true)" @mouseleave="onHover(false)">
-        <span v-if="filename"
+        <span v-if="filename != ''"
             class="text-gray-300 tokyo-night rounded-lg">
             {{ filename }}
         </span>
