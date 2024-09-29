@@ -1,5 +1,5 @@
 <template>
-    <div class="ml-4 mr-4 mt-2 width-page">
+    <div class="md:ml-4 md:mr-4 mt-2 width-page">
         <h1 class="font-bold text-xl">投稿一覧</h1>
         <hr class="mb-2" />
         <ContentQuery v-slot="{ data: allPosts }" :path="$route.path">
